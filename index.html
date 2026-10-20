@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio de FrappeDeveloper: programación, desarrollo de videojuegos y proyectos personales.">
+  <title>Portfolio FP | FrappeDeveloper</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" defer></script>
+  <script src="data.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Portfolio FP, inicio"><span>PORTFOLIO</span><strong>FP</strong></a>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <nav class="main-nav" id="main-nav">
+      <a href="#Proyectos">Proyectos</a>
+      <a href="#Experiencias">Experiencia técnica</a>
+      <a href="#Estudios-Habilidades">Estudios / Habilidades</a>
+      <a href="#Contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="portfolio-carousel-section" aria-label="Proyectos destacados">
+      <div id="portfolioCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="6000">
+        <div class="carousel-indicators" id="portfolio-carousel-indicators"></div>
+        <div class="carousel-inner" id="portfolio-carousel-inner"></div>
+        <button class="carousel-control-prev btn-carousel" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="prev" aria-label="Proyecto anterior">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next btn-carousel" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="next" aria-label="Proyecto siguiente">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <p class="eyebrow">DESARROLLO · PROGRAMACIÓN · VIDEOJUEGOS</p>
+        <h1 id="hero-title">Portfolio <span>FP</span></h1>
+        <p class="hero-subtitle" id="hero-subtitle">Proyectos personales y experiencia técnica</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#Proyectos">Ver proyectos</a>
+          <a class="button button-outline" id="github-hero" href="https://github.com/FrappeDeveloper" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+        </div>
+      </div>
+      <div class="hero-mark" aria-hidden="true"><img src="./assets/images/gifmake_com_1792533728784_884.gif" alt=""></div>
+    </section>
+
+    <section class="section about-section" id="Sobre-mi">
+      <div class="section-heading"><p class="eyebrow">PRESENTACIÓN</p><h2>Sobre mí</h2></div>
+      <div class="about-card">
+        <div class="avatar-wrap"><img id="profile-image" src="assets/images/Perfil.jpg" alt="Imagen de perfil" onerror="this.style.display='none'"></div>
+        <div class="about-content">
+          <h3 id="profile-name">FrappeDeveloper</h3>
+          <p id="about-text">Soy una persona curiosa, trabajadora y comprometida con el aprendizaje continuo. Me interesa especialmente la parte técnica de la programación, desde la lógica y la resolución de problemas hasta el desarrollo de sistemas y mecánicas de videojuegos. Disfruto experimentar con nuevas ideas, desarrollar proyectos propios y mejorar mis habilidades a través de la práctica.</p>
+          <div id="contact-details" class="contact-details"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="Proyectos">
+      <div class="section-heading"><p class="eyebrow">TRABAJOS SELECCIONADOS</p><h2>Proyectos</h2><p class="section-description">Proyectos personales y colaborativos en los que trabajé.</p></div>
+      <div class="project-grid" id="project-grid"></div>
+    </section>
+
+    <section class="section" id="Experiencias">
+      <div class="section-heading"><p class="eyebrow">CONOCIMIENTOS APLICADOS</p><h2>Experiencia técnica</h2></div>
+      <div class="experience-list" id="experience-list"></div>
+    </section>
+
+    <section class="section skills-section" id="Estudios-Habilidades">
+      <div class="section-heading"><p class="eyebrow">TECNOLOGÍAS Y FORMACIÓN</p><h2>Estudios / Habilidades</h2></div>
+      <div class="skills-grid" id="skills-grid"></div>
+    </section>
+
+    <section class="section contact-section" id="Contacto">
+     <div class="section-heading">
+  <p class="eyebrow">HABLEMOS</p>
+  <h2>Contacto</h2>
+  <p class="section-description">
+    Estoy reorganizando mi GitHub, así que por ahora está un poco vacío. Pronto voy a subir mis proyectos.
+  </p>
+</div>
+
+<a class="button button-primary" id="github-contact"
+   href="https://github.com/FrappeDeveloper"
+   target="_blank" rel="noopener noreferrer">
+  Visitar GitHub ↗
+</a>
+    </section>
+  </main>
+
+  <footer class="site-footer"><span>Portfolio FP</span><span>Hecho con HTML, Bootstrap, CSS y JavaScript</span></footer>
+</body>
+</html>
